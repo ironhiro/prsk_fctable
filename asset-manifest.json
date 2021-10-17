@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/prsk_fctable/static/css/main.73acd020.chunk.css",
-    "main.js": "/prsk_fctable/static/js/main.77464852.chunk.js",
-    "main.js.map": "/prsk_fctable/static/js/main.77464852.chunk.js.map",
+    "main.js": "/prsk_fctable/static/js/main.eb186ba4.chunk.js",
+    "main.js.map": "/prsk_fctable/static/js/main.eb186ba4.chunk.js.map",
     "runtime-main.js": "/prsk_fctable/static/js/runtime-main.fbd5a336.js",
     "runtime-main.js.map": "/prsk_fctable/static/js/runtime-main.fbd5a336.js.map",
     "static/css/2.feda8dcb.chunk.css": "/prsk_fctable/static/css/2.feda8dcb.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.feda8dcb.chunk.css",
     "static/js/2.833bf350.chunk.js",
     "static/css/main.73acd020.chunk.css",
-    "static/js/main.77464852.chunk.js"
+    "static/js/main.eb186ba4.chunk.js"
   ]
 }
