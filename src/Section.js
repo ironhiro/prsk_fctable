@@ -144,7 +144,7 @@ const Sections = forwardRef((props, ref) =>{
                     <div className="d-flex justify-content-around mt-5">
                         <div className="d-flex flex-column" id="custom-profile-root">
                             <div className="p-2 mb-3 text-center">
-                                <img style={imageStyle} id="profile_img"  src="/assets/default.png" width="150px" height="150px"></img>
+                                <img style={imageStyle} id="profile_img"  src={process.env.PUBLIC_URL +  "/assets/default.png"} width="150px" height="150px"></img>
                                 <br></br>
                                 <label id="input-file" className="input-file-button" for="upload_file">
                                     이미지 업로드
@@ -163,19 +163,19 @@ const Sections = forwardRef((props, ref) =>{
                        <div className="d-flex flex-row h2 my-auto">
                             <div id="current_date" className="p-2">{getCurrentDate()}</div>
                             <div id = "blank_status" className="p-2">
-                                <img src="/assets/status/blank.png" width="25px" height="25px"></img>
+                                <img src={process.env.PUBLIC_URL +  "/assets/status/blank.png"} width="25px" height="25px"></img>
                                 {chartStatus['blank']}
                             </div>
                             <div id = "clear_status" className="p-2">
-                                <img src="/assets/status/clear.png" width="25px" height="25px"></img>
+                                <img src={process.env.PUBLIC_URL +  "/assets/status/clear.png"} width="25px" height="25px"></img>
                                 {chartStatus['clear']}
                             </div>
                             <div id = "fc_status" className="p-2">
-                                <img src="/assets/status/fc.png" width="25px" height="25px"></img>
+                                <img src={process.env.PUBLIC_URL +  "/assets/status/fc.png"} width="25px" height="25px"></img>
                                 {chartStatus['fc']}
                             </div>
                             <div id = "ap_status" className="p-2">
-                                <img src="/assets/status/ap.png" width="25px" height="25px"></img>
+                                <img src={process.env.PUBLIC_URL +  "/assets/status/ap.png"} width="25px" height="25px"></img>
                                 {chartStatus['ap']}
                             </div>
 
@@ -295,7 +295,7 @@ function getValues(element)
 }
 function components(data)
 {
-    const res = `/assets/jackets/${data.key}.png`;
+    const res = `${process.env.PUBLIC_URL}/assets/jackets/${data.key}.png`;
     const imageStyle ={
         backgroundImage: `url(${res})`,
         backgroundSize: "cover",
@@ -344,10 +344,10 @@ async function getComponent()
     
         return d;
     }).then(function(data){
-        const b = `/assets/groupunits/${categoryBg(element)}`;
+        const b = `${process.env.PUBLIC_URL}/assets/groupunits/${categoryBg(element)}`;
         const groups_styles={
             borderBottom: '10px solid ' + borderColor[element],
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(/assets/backgrounds/${categoryBg(element)})`,
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(${process.env.PUBLIC_URL}/assets/backgrounds/${categoryBg(element)})`,
             
             backgroundSize: 'cover',
             backgroundPosition: '20% 20%',
