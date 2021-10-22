@@ -1,7 +1,7 @@
 import './Section.css';
 import {firestore} from './firebase';
 import {useAsync} from "react-async";
-import {exportComponentAsPNG} from 'react-component-export-image';
+import {exportComponentAsPNG, exportComponentAsJPEG} from 'react-component-export-image';
 import React, {forwardRef, useRef} from 'react';
 import {getCurrentDate, sortByLevel} from './Utils';
 import ReactDOM from 'react-dom';
@@ -374,7 +374,7 @@ async function getComponent()
         }
      
         return (
-                <div style={row_styles} className="row chart-list h-100 mt-5">
+                <div style={row_styles}  className="row chart-list h-100 mt-5">
                     {div_col1}
                     {div_col2} 
                 </div>
