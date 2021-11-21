@@ -1,9 +1,9 @@
 import './Section.css';
 import {firestore} from './firebase';
 import {useAsync} from "react-async";
-import {exportComponentAsPNG, exportComponentAsJPEG} from 'react-component-export-image';
+import {exportComponentAsPNG} from 'react-component-export-image';
 import React, {forwardRef, useRef} from 'react';
-import {getCurrentDate, sortByLevel} from './Utils';
+import {getCurrentDate, sortByLevel, sortByDifficulties} from './Utils';
 import ReactDOM from 'react-dom';
 import './Section.css';
 
@@ -19,6 +19,7 @@ let chartStatus = {
     'ap' : 0,
 };
 
+let selectedDiff = '';
 let isChecked = false;
 
 const headerComponent = () =>{
@@ -55,6 +56,8 @@ const headerComponent = () =>{
         </div>
     );
 }
+
+
 
 const drawLine = (ctx_info, id) =>{
     ctx_info.lineWidth = 20;
@@ -160,7 +163,30 @@ const Sections = forwardRef((props, ref) =>{
                             </div>
                             
                         </div>
-                       <div className="d-flex flex-row h2 my-auto">
+                        <div className="d-flex flex-column h2 my-auto">
+                        <div className="d-flex flex-row h2 my-auto justify-content-center" style={{fontSize: "15pt"}}>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="easy" onClick={getRadioValue}></input>
+                            <label style={{color: '#64DE0D'}}class="form-check-label" for="inlineRadio1">easy</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="normal" onClick={getRadioValue}></input>
+                            <label style={{color: '#36BAEB'}} class="form-check-label" for="inlineRadio2">normal</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="hard" onClick={getRadioValue}></input>
+                            <label style={{color: '#FDAB00'}} class="form-check-label" for="inlineRadio3">hard</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="expert" onClick={getRadioValue}></input>
+                            <label style={{color: '#EC4563'}} class="form-check-label" for="inlineRadio4">expert</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="master" onClick={getRadioValue}></input>
+                            <label style={{color: '#C231F2'}} class="form-check-label" for="inlineRadio5">master</label>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-row h2 my-auto justify-content-center">
                             <div id="current_date" className="p-2">{getCurrentDate()}</div>
                             <div id = "blank_status" className="p-2">
                                 <img src={process.env.PUBLIC_URL +  "/assets/status/blank.png"} width="25px" height="25px"></img>
@@ -178,11 +204,14 @@ const Sections = forwardRef((props, ref) =>{
                                 <img src={process.env.PUBLIC_URL +  "/assets/status/ap.png"} width="25px" height="25px"></img>
                                 {chartStatus['ap']}
                             </div>
-
                        </div>
+                       </div>
+                       
                     </div>
                 </div>
-                {props.props}
+                <div id="chartsList"> 
+                    {props.props}
+                </div>
                 <div className="container mt-5">
                     <p className="text-end">
                     Powered by <a href="https://twitter.com/ironhiro1">@ironhiro1</a>, <a href="https://twitter.com/dabin_o_o">@dabin_o_o</a>
@@ -202,6 +231,88 @@ function submitNickname()
     let parentDiv = document.getElementById('custom-profile');
     ReactDOM.render(nickNameComponent(document.getElementById('input-username').value), parentDiv);
     isChecked=true;
+}
+
+async function getRadioValue()
+{
+    let counts = 0;
+    selectedDiff = document.querySelector('input[name="inlineRadioOptions"]:checked').value;
+    const tested = await Promise.all(category.map(function(element,idx){
+        return getValues(element).then(function(data){
+            counts += Object.keys(data).length;
+            const res = Object.keys(data).map((res)=>{
+                return data[res]['id'];
+            });
+            const res2 = Object.keys(data).map((res)=>{
+                return data[res];
+            });
+            const b = res2.map(function(data,index){
+                data.key=res[index];
+                return data;
+            });
+            
+            const c = b.slice(0).sort(function(a,b){
+                return sortByDifficulties(a,b,selectedDiff);
+            });
+            
+            const d = c.map((data)=>components(data));
+        
+            return d;
+        }).then(function(data){
+            const b = `${process.env.PUBLIC_URL}/assets/groupunits/${categoryBg(element)}`;
+            const groups_styles={
+                borderBottom: '10px solid ' + borderColor[element],
+                backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(${process.env.PUBLIC_URL}/assets/backgrounds/${categoryBg(element)})`,
+                
+                backgroundSize: 'cover',
+                backgroundPosition: '20% 20%',
+            }
+            const charts_styles={
+                backgroundColor: 'rgba(211,211,211,0.3)',
+                backgroundSize: 'cover',
+            }
+            const div_col1 = (
+                <div  style={groups_styles}  className="col music-category mx-auto my-auto text-center">
+                        <img className="groups" src={b}></img>
+                </div>
+            );
+            const div_col2 =  (
+                <div style={charts_styles} className="col-9 mx-auto my-auto w-100">
+                        <ul className="text-center">
+                            {data}
+                        </ul>
+                </div>
+            );
+            const row_styles = {
+                border: '10px solid ' + borderColor[element],
+                
+            }
+         
+            return (
+                    <div style={row_styles}  className="row chart-list h-100 mt-5">
+                        {div_col1}
+                        {div_col2} 
+                    </div>
+            )
+        })}));
+        chartStatus['blank'] = counts;
+        chartStatus['clear'] = 0;
+        chartStatus['fc'] = 0;
+        chartStatus['ap'] = 0;
+        clickCount = {};
+        reload();
+
+        let parentDiv = document.getElementById('chartsList');
+        ReactDOM.render(tested, parentDiv);
+    
+}
+
+function reload()
+{
+    document.getElementById("blank_status").childNodes[1].nodeValue = chartStatus['blank'];
+    document.getElementById("ap_status").childNodes[1].nodeValue = chartStatus['ap'];
+    document.getElementById("clear_status").childNodes[1].nodeValue = chartStatus['clear'];
+    document.getElementById("fc_status").childNodes[1].nodeValue = chartStatus['fc'];
 }
 
 function saveImage(sectionRef)
@@ -287,6 +398,7 @@ function getValues(element)
     const result = new Promise(function(resolve,reject){
         setTimeout(function(){
             chartref.orderByChild('category').equalTo(element).once('value').then((data)=>{
+            
             resolve(data.val());
         },2000)})});
     
@@ -395,11 +507,10 @@ export function Section()
     if(error) return <div className="container">Error</div>
     if(components){ 
         //Section 위쪽에 인장 
-         
         return (
             <React.Fragment>
                 
-                <Sections ref={sectionRef} props={components}/>
+                <Sections  ref={sectionRef} props={components}/>
                 <div className="py-4 my-4 container text-center border-top">
                     <button onClick={() => saveImage(sectionRef)} className="btn btn-primary btn-lg">이미지 생성하기</button>
                 </div>
