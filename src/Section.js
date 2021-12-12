@@ -3,7 +3,7 @@ import {firestore} from './firebase';
 import {useAsync} from "react-async";
 import {exportComponentAsPNG} from 'react-component-export-image';
 import React, {forwardRef, useRef} from 'react';
-import {getCurrentDate, sortByLevel, sortByDifficulties} from './Utils';
+import {getCurrentDate, sortByDifficulties} from './Utils';
 import ReactDOM from 'react-dom';
 import './Section.css';
 
@@ -449,7 +449,7 @@ async function getComponent()
         });
         
         const c = b.slice(0).sort(function(a,b){
-            return sortByLevel(a,b);
+            return sortByDifficulties(a,b, 'master');
         });
         
         const d = c.map((data)=>components(data));

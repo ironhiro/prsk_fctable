@@ -8,8 +8,10 @@ export function getCurrentDate(separator='/'){
     return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
 }
 
-export function sortByLevel(a,b){
-    if(a.difficulties.master == b.difficulties.master){return sortByDate(a,b);} return a.difficulties.master > b.difficulties.master ? 1 : -1;
+
+
+export function sortByPublished(a,b){
+    if(a.releaseCond == b.releaseCond){return sortByDate(a,b);} return a.releaseCond > b.releaseCond ? -1 : 1;
 }
 
 export function sortByDifficulties(a,b,difficulty){
