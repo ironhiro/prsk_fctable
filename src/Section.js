@@ -6,7 +6,7 @@ import React, {forwardRef, useRef} from 'react';
 import {getCurrentDate, sortByDifficulties} from './Utils';
 import ReactDOM from 'react-dom';
 import './Section.css';
-
+import html2canvas from 'html2canvas';
 
 const category = ['vocaloid', 'light_music_club', 'idol', 'street', 'theme_park', 'school_refusal','other'];
 const lineColor_1 = ["#ffd642", "#f755e7", "#76d6ff","transparent"];
@@ -233,6 +233,11 @@ function submitNickname()
     isChecked=true;
 }
 
+async function getGroupValue()
+{
+    
+}
+
 async function getRadioValue()
 {
     let counts = 0;
@@ -321,7 +326,18 @@ function saveImage(sectionRef)
     {
         document.getElementById('input-file').style.display = "none";
         document.getElementById('button_undo').style.display = "none";
-        exportComponentAsPNG(sectionRef,{fileName:"풀콤체크표.png"});
+        
+        //exportComponentAsPNG(sectionRef,{fileName:"풀콤체크표.png", html2CanvasOptions:{}});
+        const element = ReactDOM.findDOMNode(sectionRef.current);
+        const fType = 'image/png';
+        const fileName='풀콤체크표.PNG';
+        html2canvas(element,{
+            scrollY: -window.scrollY,
+            useCORS: true,
+        }).then(canvas => {
+            saveAs(canvas.toDataURL(fType, 1.0), fileName);
+        });
+        
         document.getElementById('input-file').style.display = "inline";
         document.getElementById('button_undo').style.display = "inline";
     }
@@ -331,6 +347,21 @@ function saveImage(sectionRef)
     }
     
 }
+
+const saveAs = (uri, filename) => {
+    const link = document.createElement('a');
+
+    if (typeof link.download === 'string') {
+        link.href = uri;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } else {
+        window.open(uri);
+    }
+};
+
 
 function categoryBg(category)
 {
