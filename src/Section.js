@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 import './Section.css';
 import html2canvas from 'html2canvas';
 
-const category = ['vocaloid', 'light_music_club', 'idol', 'street', 'theme_park', 'school_refusal','other'];
+const category = ['vocaloid', 'light_music_club', 'idol', 'street', 'theme_park', 'school_refusal','sekai','other'];
 const lineColor_1 = ["#ffd642", "#f755e7", "#76d6ff","transparent"];
 
 let clickCount = {};
@@ -105,7 +105,8 @@ const borderColor = {
     'street': "#EE1166",
     'theme_park': "#FF9900",
     'school_refusal': "#884499",
-    'other': "#2ED7E1"
+    'sekai': "#2ED7E1",
+    'other': "#FFD800",
 };
 
 const origComponent = ()=>{
@@ -386,8 +387,11 @@ function categoryBg(category)
         case 'theme_park':
             a='wxs.png';
             break;
-        case 'other':
+        case 'sekai':
             a=`${category}.png`;
+            break;
+        case 'other':
+            a='other.png';
             break;
 
     }
@@ -423,7 +427,6 @@ function checkStatus(data)
 function getValues(element)
 {
     // 맞는 데이터 찾는 과정
-    
     const chartref = firestore.ref('charts');
 
     const result = new Promise(function(resolve,reject){
@@ -488,6 +491,8 @@ async function getComponent()
         return d;
     }).then(function(data){
         const b = `${process.env.PUBLIC_URL}/assets/groupunits/${categoryBg(element)}`;
+        const group_name = categoryBg(element).replace('.png', '')=='other'? categoryBg(element).replace('.png', ''):'groups';
+        
         const groups_styles={
             borderBottom: '10px solid ' + borderColor[element],
             backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(${process.env.PUBLIC_URL}/assets/backgrounds/${categoryBg(element)})`,
@@ -499,9 +504,10 @@ async function getComponent()
             backgroundColor: 'rgba(211,211,211,0.3)',
             backgroundSize: 'cover',
         }
+        
         const div_col1 = (
             <div  style={groups_styles}  className="col music-category mx-auto my-auto text-center">
-                    <img className="groups" src={b}></img>
+                    <img className={group_name} src={b}></img>
             </div>
         );
         const div_col2 =  (
