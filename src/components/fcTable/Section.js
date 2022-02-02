@@ -1,5 +1,5 @@
 import './Section.css';
-import {firestore} from './firebase';
+import {firestore} from '../../firebase';
 import {useAsync} from "react-async";
 import {exportComponentAsPNG} from 'react-component-export-image';
 import React, {forwardRef, useRef} from 'react';
@@ -215,7 +215,7 @@ const Sections = forwardRef((props, ref) =>{
                 </div>
                 <div className="container mt-5">
                     <p className="text-end">
-                    Powered by <a href="https://twitter.com/ironhiro1">@ironhiro1</a>, <a href="https://twitter.com/dabin_o_o">@dabin_o_o</a>
+                    Powered by <a href="https://twitter.com/ironhiro1">@ironhiro1</a>, <a href="https://twitter.com/Biiiiiiiiii_0w0">@Biiiiiiiiii_0w0</a>
                     </p>
                 </div>
         </div>
@@ -533,7 +533,7 @@ async function getComponent()
 }
 
 
-export function Section()
+function Section()
 {
     const {data: components, error, isLoading} = useAsync({
         promiseFn: getComponent
@@ -556,3 +556,5 @@ export function Section()
         );
     } 
 }
+
+export default Section;

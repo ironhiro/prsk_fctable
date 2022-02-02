@@ -12,6 +12,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.1",
+    "cross-env": "^7.0.3",
     "firebase": "^9.1.2",
     "firebase-admin": "^9.12.0",
     "gh-pages": "^3.2.3",
@@ -21,15 +22,16 @@
     "react-bootstrap": "^2.0.0-rc.0",
     "react-component-export-image": "^1.0.6",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-sync": "^0.9.0",
     "use-between": "0.0.18",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build && copy CNAME build",
     "deploy": "gh-pages -d build"
