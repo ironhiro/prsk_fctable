@@ -27,28 +27,3 @@ body {
 }
 
 
-ul > li{
-  display: inline-block;
-    /* You can also add some margins here to make it look prettier */
-  zoom:1;
-  *display:inline;
-  width: 100px;
-  height: 100px;
-  margin: 10px 18px;
-  /* this fix is needed for IE7- */
-}
-
-.groups{
-  width: 300px;
-  height: 125px;
-}
-
-.other{
-  width: 125px;
-  height: 125px;
-}
-
-.jackets{
-  width: 100px;
-  height: 100px;
-}

@@ -1,0 +1,14 @@
+.input-file-button{
+    padding: 6px 25px;
+    background-color:#0D6EFD;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+
+.profile{
+  border-radius: 50%;
+  border: 5px solid #FCE540;
+  width: 20%;
+  height: 20%;
+}
