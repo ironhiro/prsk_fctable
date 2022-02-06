@@ -1,7 +1,6 @@
 import './Section.css';
-import {firestore} from './firebase';
+import {firestore} from '../../firebase';
 import {useAsync} from "react-async";
-import {exportComponentAsPNG} from 'react-component-export-image';
 import React, {forwardRef, useRef} from 'react';
 import {getCurrentDate, sortByDifficulties} from './Utils';
 import ReactDOM from 'react-dom';
@@ -215,7 +214,7 @@ const Sections = forwardRef((props, ref) =>{
                 </div>
                 <div className="container mt-5">
                     <p className="text-end">
-                    Powered by <a href="https://twitter.com/ironhiro1">@ironhiro1</a>, <a href="https://twitter.com/dabin_o_o">@dabin_o_o</a>
+                    Powered by <a href="https://twitter.com/ironhiro1">@ironhiro1</a>, <a href="https://twitter.com/Biiiiiiiiii_0w0">@Biiiiiiiiii_0w0</a>
                     </p>
                 </div>
         </div>
@@ -284,7 +283,7 @@ async function getRadioValue()
             );
             const div_col2 =  (
                 <div style={charts_styles} className="col-9 mx-auto my-auto w-100">
-                        <ul className="text-center">
+                        <ul className="groups_border text-center">
                             {data}
                         </ul>
                 </div>
@@ -427,7 +426,7 @@ function checkStatus(data)
 function getValues(element)
 {
     // 맞는 데이터 찾는 과정
-    const chartref = firestore.ref('charts');
+    const chartref = firestore.ref('test/charts');
 
     const result = new Promise(function(resolve,reject){
         setTimeout(function(){
@@ -454,7 +453,7 @@ function components(data)
    
 
     
-    return <li style={listStyle}><canvas id={canvasName}  onClick={drawDash} className="jackets" style={imageStyle}></canvas></li>
+    return <li className="jacketInfo" style={listStyle}><canvas id={canvasName}  onClick={drawDash} className="jackets" style={imageStyle}></canvas></li>
 }
 
 function drawDash(component)
@@ -512,7 +511,7 @@ async function getComponent()
         );
         const div_col2 =  (
             <div style={charts_styles} className="col-9 mx-auto my-auto w-100">
-                    <ul className="text-center">
+                    <ul className="groups_border text-center">
                         {data}
                     </ul>
             </div>
@@ -533,7 +532,7 @@ async function getComponent()
 }
 
 
-export function Section()
+function Section()
 {
     const {data: components, error, isLoading} = useAsync({
         promiseFn: getComponent
@@ -556,3 +555,5 @@ export function Section()
         );
     } 
 }
+
+export default Section;

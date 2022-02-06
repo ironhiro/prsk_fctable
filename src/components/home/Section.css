@@ -6,3 +6,9 @@
     cursor: pointer;
   }
 
+.profile{
+  border-radius: 50%;
+  border: 5px solid #FCE540;
+  width: 20%;
+  height: 20%;
+}

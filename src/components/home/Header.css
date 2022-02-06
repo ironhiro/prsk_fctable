@@ -1,0 +1,15 @@
+span{
+    font-family:'천리마 굵은'
+}
+
+
+.navbar-nav .nav-link,
+.navbar-custom .navbar-text{
+    color:gray;
+    font-size:x-large;
+}
+
+.navbar-custom .navbar-brand{
+    color: black;
+    font-size: xx-large;
+}
