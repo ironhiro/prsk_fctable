@@ -21,6 +21,7 @@
     "firebase": "^9.1.2",
     "firebase-admin": "^9.12.0",
     "gh-pages": "^3.2.3",
+    "jquery": "^3.6.0",
     "open-file-explorer": "^1.0.2",
     "react": "^17.0.2",
     "react-async": "^10.0.1",
@@ -32,6 +33,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-sync": "^0.9.0",
+    "react-tooltip": "^4.2.21",
     "remark-gfm": "^3.0.1",
     "use-between": "0.0.18",
     "web-vitals": "^1.1.2"

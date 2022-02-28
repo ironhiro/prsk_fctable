@@ -1,9 +1,10 @@
 import './Section.css';
 import {firestore} from '../../firebase';
 import {useAsync} from "react-async";
-import React, {forwardRef, useRef} from 'react';
+import React, {forwardRef, useRef, useEffect} from 'react';
 import {getCurrentDate, sortByDifficulties} from './Utils';
 import ReactDOM from 'react-dom';
+import ReactTooltip from 'react-tooltip';
 import './Section.css';
 import html2canvas from 'html2canvas';
 
@@ -426,7 +427,7 @@ function checkStatus(data)
 function getValues(element)
 {
     // 맞는 데이터 찾는 과정
-    const chartref = firestore.ref('test/charts');
+    const chartref = firestore.ref('charts');
 
     const result = new Promise(function(resolve,reject){
         setTimeout(function(){
@@ -450,10 +451,26 @@ function components(data)
         border: `5px solid ${borderColor[data.category]}`,
     }
     const canvasName = `${data.key}`;
-   
-
+    const tooltipMessage=
+        `Title: ${data.title}
+        Lv
+        Easy - ${data.difficulties.easy}
+        Normal - ${data.difficulties.normal}
+        Hard - ${data.difficulties.hard}
+        Expert - ${data.difficulties.expert}
+        Master - ${data.difficulties.master}`;
     
-    return <li className="jacketInfo" style={listStyle}><canvas id={canvasName}  onClick={drawDash} className="jackets" style={imageStyle}></canvas></li>
+    return <li className="jacketInfo" style={listStyle}>
+        <canvas id={canvasName} onClick={drawDash} data-for={'chart' + data.id.toString()} data-tip className="jackets" style={imageStyle}></canvas>
+        <ReactTooltip
+            className="chartToolTip"
+            id={'chart' + data.id.toString()}
+            place="bottom"
+            data-html={true}
+            >
+            {tooltipMessage}
+        </ReactTooltip>
+        </li>
 }
 
 function drawDash(component)

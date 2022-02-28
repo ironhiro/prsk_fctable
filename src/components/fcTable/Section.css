@@ -17,6 +17,11 @@
     /* this fix is needed for IE7- */
   }
   
+  .chartToolTip{
+    width:"100px";
+    white-space: pre-line;
+  }
+
   .groups{
     width: 300px;
     height: 125px;
