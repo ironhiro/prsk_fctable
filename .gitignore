@@ -46,7 +46,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+build/*
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
@@ -142,12 +142,21 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+
+
+
+# Created by https://www.toptal.com/developers/gitignore/api/react
+# Edit at https://www.toptal.com/developers/gitignore?templates=react
+
 ### react ###
 .DS_*
+*.log
+logs
 **/*.backup.*
 **/*.back.*
 
 node_modules
+bower_components
 
 *.sublime*
 
@@ -155,4 +164,5 @@ psd
 thumb
 sketch
 
+# End of https://www.toptal.com/developers/gitignore/api/react
 # End of https://www.toptal.com/developers/gitignore/api/react,node

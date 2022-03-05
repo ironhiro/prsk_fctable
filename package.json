@@ -45,6 +45,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build && copy CNAME build",
     "deploy": "gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [

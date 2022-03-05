@@ -325,6 +325,7 @@ function saveImage(sectionRef)
 {
     if(isChecked)
     {
+        document.getElementById('btn-download').style.display = "none";
         document.getElementById('input-file').style.display = "none";
         document.getElementById('button_undo').style.display = "none";
         console.log(sectionRef);
@@ -338,8 +339,21 @@ function saveImage(sectionRef)
             scrollY: -window.scrollY,
             useCORS: true,
         }).then(canvas => {
+            var resizedCanvas = document.createElement("canvas");
+            var resizedContext = resizedCanvas.getContext("2d");
+            resizedCanvas.width = 1320;
+            resizedCanvas.height = 5000;
+            resizedContext.drawImage(canvas, 0,0,1320, 5000);
             
-            saveAs(canvas.toDataURL(fType, 1.0), fileName);
+            let link = document.createElement("a");
+            link.download = fileName;
+            resizedCanvas.toBlob(function(blob){
+                link.href = window.URL.createObjectURL(blob);
+                link.click();
+                document.getElementById('btn-download').style.display = "inline";
+            }, fType);
+            
+            
         });
         
         document.getElementById('input-file').style.display = "inline";
@@ -351,20 +365,6 @@ function saveImage(sectionRef)
     }
     
 }
-
-const saveAs = (uri, filename) => {
-    const link = document.createElement('a');
-
-    if (typeof link.download === 'string') {
-        link.href = uri;
-        link.download = filename;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    } else {
-        window.open(uri);
-    }
-};
 
 
 function categoryBg(category)
@@ -569,9 +569,9 @@ function Section()
             <React.Fragment>
                 <Sections  ref={sectionRef} props={components}/>
                 <div className="py-4 my-4 container text-center border-top">
-                    <button onClick={() => {
+                    <button id="btn-download" onClick={() => {
                         saveImage(sectionRef);
-                    }} className="btn btn-primary btn-lg">이미지 생성하기</button>
+                    }} className="btn btn-primary btn-lg ">이미지 생성하기</button>
                 </div>
             </React.Fragment>
             
