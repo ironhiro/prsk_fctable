@@ -1,7 +1,7 @@
 import './Section.css';
 import {firestore} from '../../firebase';
 import {useAsync} from "react-async";
-import React, {forwardRef, useRef, useEffect} from 'react';
+import React, {forwardRef, useRef, useEffect, useState} from 'react';
 import {getCurrentDate, sortByDifficulties} from './Utils';
 import ReactDOM from 'react-dom';
 import ReactTooltip from 'react-tooltip';
@@ -145,10 +145,10 @@ const Sections = forwardRef((props, ref) =>{
         <div className="App-section container" ref={ref}>
                 {headerComponent()}
                 <div className="container"> 
-                    <div className="d-flex justify-content-around mt-5">
+                    <div className="d-flex flex-wrap justify-content-around mt-5">
                         <div className="d-flex flex-column" id="custom-profile-root">
                             <div className="p-2 mb-3 text-center">
-                                <img style={imageStyle} id="profile_img"  src={process.env.PUBLIC_URL +  "/assets/default.png"} width="150px" height="150px"></img>
+                                <img style={imageStyle} id="profile_img"  src={process.env.PUBLIC_URL +  "/assets/default.png"}></img>
                                 <br></br>
                                 <label id="input-file" className="input-file-button" for="upload_file">
                                     이미지 업로드
@@ -159,14 +159,14 @@ const Sections = forwardRef((props, ref) =>{
                             <div className="p-2 mb-3" id="custom-profile">
                                 <div className="h5 input-group">
                                     <input type="text" id="input-username" className="form-control" placeholder="닉네임을 등록해주세요" aria-label="username"></input>
-                                    <button className="btn btn-primary" onClick={submitNickname}>등록하기</button>    
+                                    <button className="btn btn-primary" id="register_nickname" onClick={submitNickname}>등록하기</button>    
                                 </div>
                             </div>
                             
                         </div>
-                        <div className="d-flex flex-column h2 my-auto">
-                        <div className="d-flex flex-row h2 my-auto justify-content-center" style={{fontSize: "15pt"}}>
-                        <div class="form-check form-check-inline">
+                        <div className="d-flex flex-column h4 my-auto">
+                        <div className="d-flex flex-row flex-wrap h4 my-auto justify-content-center" style={{fontSize: "15pt"}}>
+                        <div className="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="easy" onClick={getRadioValue}></input>
                             <label style={{color: '#64DE0D'}}class="form-check-label" for="inlineRadio1">easy</label>
                             </div>
@@ -187,7 +187,7 @@ const Sections = forwardRef((props, ref) =>{
                             <label style={{color: '#C231F2'}} class="form-check-label" for="inlineRadio5">master</label>
                             </div>
                         </div>
-                        <div className="d-flex flex-row h2 my-auto justify-content-center">
+                        <div className="d-flex flex-wrap flex-row h4 my-auto justify-content-center">
                             <div id="current_date" className="p-2">{getCurrentDate()}</div>
                             <div id = "blank_status" className="p-2">
                                 <img src={process.env.PUBLIC_URL +  "/assets/status/blank.png"} width="25px" height="25px"></img>
@@ -327,15 +327,18 @@ function saveImage(sectionRef)
     {
         document.getElementById('input-file').style.display = "none";
         document.getElementById('button_undo').style.display = "none";
-        
+        console.log(sectionRef);
         //exportComponentAsPNG(sectionRef,{fileName:"풀콤체크표.png", html2CanvasOptions:{}});
-        const element = ReactDOM.findDOMNode(sectionRef.current);
+        
+
         const fType = 'image/png';
         const fileName='풀콤체크표.PNG';
-        html2canvas(element,{
+        html2canvas(sectionRef.current,{
+            windowWidth: 1440,
             scrollY: -window.scrollY,
             useCORS: true,
         }).then(canvas => {
+            
             saveAs(canvas.toDataURL(fType, 1.0), fileName);
         });
         
@@ -554,18 +557,21 @@ function Section()
     const {data: components, error, isLoading} = useAsync({
         promiseFn: getComponent
     });
-
     const sectionRef = useRef();
+    
+    
     if(isLoading) return <div className="container">로딩중...</div>
     if(error) return <div className="container">Error</div>
     if(components){ 
         //Section 위쪽에 인장 
+        
         return (
             <React.Fragment>
-                
                 <Sections  ref={sectionRef} props={components}/>
                 <div className="py-4 my-4 container text-center border-top">
-                    <button onClick={() => saveImage(sectionRef)} className="btn btn-primary btn-lg">이미지 생성하기</button>
+                    <button onClick={() => {
+                        saveImage(sectionRef);
+                    }} className="btn btn-primary btn-lg">이미지 생성하기</button>
                 </div>
             </React.Fragment>
             

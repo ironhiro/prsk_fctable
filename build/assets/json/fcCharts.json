@@ -1,0 +1,1681 @@
+{
+	"charts": {
+		"1": {
+			"title": "Tell Your World",
+			"id": 1,
+			"difficulties": {
+				"easy": 5,
+				"normal": 10,
+				"hard": 16,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1560148031000,
+			"category": "vocaloid"
+		},
+		"2": {
+			"title": "ロキ",
+			"id": 2,
+			"difficulties": {
+				"easy": 7,
+				"normal": 11,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1560148031000,
+			"category": "light_music_club"
+		},
+		"3": {
+			"title": "テオ",
+			"id": 3,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 19,
+				"expert": 27,
+				"master": 31
+			},
+			"publish_date": 1560148031000,
+			"category": "light_music_club"
+		},
+		"4": {
+			"title": "ヒバナ -Reloaded-",
+			"id": 6,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 19,
+				"expert": 28,
+				"master": 32
+			},
+			"publish_date": 1560148031000,
+			"category": "light_music_club"
+		},
+		"5": {
+			"title": "タイムマシン",
+			"id": 8,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 23,
+				"master": 26
+			},
+			"publish_date": 1612936800000,
+			"category": "light_music_club"
+		},
+		"6": {
+			"title": "ハッピーシンセサイザ",
+			"id": 10,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 18,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1560148031000,
+			"category": "idol"
+		},
+		"7": {
+			"title": "ビバハピ",
+			"id": 11,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1602396000000,
+			"category": "idol"
+		},
+		"8": {
+			"title": "Nostalogic",
+			"id": 13,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 17,
+				"expert": 23,
+				"master": 28
+			},
+			"publish_date": 1560148031000,
+			"category": "idol"
+		},
+		"9": {
+			"title": "drop pop candy",
+			"id": 15,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1613368800000,
+			"category": "street"
+		},
+		"10": {
+			"title": "アスノヨゾラ哨戒班",
+			"id": 18,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1601532000000,
+			"category": "light_music_club"
+		},
+		"11": {
+			"title": "シャルル",
+			"id": 19,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 17,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1560148031000,
+			"category": "school_refusal"
+		},
+		"12": {
+			"title": "脱法ロック",
+			"id": 21,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1601791200000,
+			"category": "theme_park"
+		},
+		"13": {
+			"title": "命に嫌われている",
+			"id": 22,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 18,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1601877600000,
+			"category": "school_refusal"
+		},
+		"14": {
+			"title": "劣等上等",
+			"id": 26,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 18,
+				"expert": 25,
+				"master": 30
+			},
+			"publish_date": 1560148031000,
+			"category": "street"
+		},
+		"15": {
+			"title": "Just Be Friends",
+			"id": 27,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 17,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1601704800000,
+			"category": "street"
+		},
+		"16": {
+			"title": "ドクター=ファンクビート",
+			"id": 28,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 19,
+				"expert": 27,
+				"master": 32
+			},
+			"publish_date": 1560148031000,
+			"category": "street"
+		},
+		"17": {
+			"title": "ミラクルペイント",
+			"id": 36,
+			"difficulties": {
+				"easy": 9,
+				"normal": 12,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1602568800000,
+			"category": "theme_park"
+		},
+		"18": {
+			"title": "ブリキノダンス",
+			"id": 38,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1560148031000,
+			"category": "theme_park"
+		},
+		"19": {
+			"title": "スイートマジック",
+			"id": 41,
+			"difficulties": {
+				"easy": 5,
+				"normal": 12,
+				"hard": 18,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1560148031000,
+			"category": "theme_park"
+		},
+		"20": {
+			"title": "ネクストネスト",
+			"id": 43,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 18,
+				"expert": 27,
+				"master": 29
+			},
+			"publish_date": 1560148031000,
+			"category": "vocaloid"
+		},
+		"21": {
+			"title": "Hand in Hand",
+			"id": 44,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 16,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1602136800000,
+			"category": "vocaloid"
+		},
+		"22": {
+			"title": "39みゅーじっく！",
+			"id": 45,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 23,
+				"master": 28
+			},
+			"publish_date": 1602828000000,
+			"category": "vocaloid"
+		},
+		"23": {
+			"title": "グリーンライツ・セレナーデ",
+			"id": 46,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 19,
+				"expert": 27,
+				"master": 31
+			},
+			"publish_date": 1609221600000,
+			"category": "vocaloid"
+		},
+		"24": {
+			"title": "メルト",
+			"id": 47,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1560148031000,
+			"category": "vocaloid"
+		},
+		"25": {
+			"title": "ワールドイズマイン",
+			"id": 48,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1601964000000,
+			"category": "vocaloid"
+		},
+		"26": {
+			"title": "初音ミクの消失",
+			"id": 49,
+			"difficulties": {
+				"easy": 9,
+				"normal": 15,
+				"hard": 21,
+				"expert": 29,
+				"master": 33
+			},
+			"publish_date": 1560148031000,
+			"category": "vocaloid"
+		},
+		"27": {
+			"title": "Blessing",
+			"id": 50,
+			"difficulties": {
+				"easy": 5,
+				"normal": 11,
+				"hard": 16,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1560148031000,
+			"category": "vocaloid"
+		},
+		"28": {
+			"title": "セカイはまだ始まってすらいない",
+			"id": 51,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 16,
+				"expert": 24,
+				"master": 29
+			},
+			"publish_date": 1560148031000,
+			"category": "theme_park"
+		},
+		"29": {
+			"title": "potatoになっていく",
+			"id": 52,
+			"difficulties": {
+				"easy": 5,
+				"normal": 11,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1604754300000,
+			"category": "theme_park"
+		},
+		"30": {
+			"title": "Ready Steady",
+			"id": 54,
+			"difficulties": {
+				"easy": 5,
+				"normal": 10,
+				"hard": 16,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1560148031000,
+			"category": "street"
+		},
+		"31": {
+			"title": "Forward",
+			"id": 55,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1607432700000,
+			"category": "street"
+		},
+		"32": {
+			"title": "アイドル新鋭隊",
+			"id": 57,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1560148031000,
+			"category": "idol"
+		},
+		"33": {
+			"title": "悔やむと書いてミライ",
+			"id": 60,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 17,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1560148031000,
+			"category": "school_refusal"
+		},
+		"34": {
+			"title": "携帯恋話",
+			"id": 61,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1602741600000,
+			"category": "school_refusal"
+		},
+		"35": {
+			"title": "ジャックポットサッドガール",
+			"id": 62,
+			"difficulties": {
+				"easy": 9,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1603173600000,
+			"category": "school_refusal"
+		},
+		"36": {
+			"title": "needLe",
+			"id": 63,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1560148031000,
+			"category": "light_music_club"
+		},
+		"37": {
+			"title": "ステラ",
+			"id": 64,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 17,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1603026300000,
+			"category": "light_music_club"
+		},
+		"38": {
+			"title": "ハロ／ハワユ",
+			"id": 66,
+			"difficulties": {
+				"easy": 5,
+				"normal": 10,
+				"hard": 15,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1560148031000,
+			"category": "school_refusal"
+		},
+		"39": {
+			"title": "自傷無色",
+			"id": 67,
+			"difficulties": {
+				"easy": 5,
+				"normal": 10,
+				"hard": 17,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1560148031000,
+			"category": "school_refusal"
+		},
+		"40": {
+			"title": "ダンスロボットダンス",
+			"id": 68,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1602050400000,
+			"category": "theme_park"
+		},
+		"41": {
+			"title": "フラジール",
+			"id": 69,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 17,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1560148031000,
+			"category": "street"
+		},
+		"42": {
+			"title": "メルティランドナイトメア",
+			"id": 70,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 26
+			},
+			"publish_date": 1603605600000,
+			"category": "idol"
+		},
+		"43": {
+			"title": "ツギハギスタッカート",
+			"id": 71,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1560148031000,
+			"category": "idol"
+		},
+		"44": {
+			"title": "ブレス・ユア・ブレス",
+			"id": 72,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1609740000000,
+			"category": "vocaloid"
+		},
+		"45": {
+			"title": "ニア",
+			"id": 73,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1601618400000,
+			"category": "idol"
+		},
+		"46": {
+			"title": "独りんぼエンヴィー",
+			"id": 74,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1607925600000,
+			"category": "school_refusal"
+		},
+		"47": {
+			"title": "ウミユリ海底譚",
+			"id": 75,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 17,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1606802400000,
+			"category": "light_music_club"
+		},
+		"48": {
+			"title": "セカイ",
+			"id": 76,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 18,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1560148031000,
+			"category": "other"
+		},
+		"49": {
+			"title": "ワーワーワールド",
+			"id": 77,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1560148031000,
+			"category": "other"
+		},
+		"50": {
+			"title": "ぼうけんのしょがきえました！",
+			"id": 78,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 19,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1560148031000,
+			"category": "theme_park"
+		},
+		"51": {
+			"title": "夜咄ディセイブ",
+			"id": 81,
+			"difficulties": {
+				"easy": 8,
+				"normal": 14,
+				"hard": 19,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1602223200000,
+			"category": "street"
+		},
+		"52": {
+			"title": "alive",
+			"id": 82,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 23,
+				"master": 26
+			},
+			"publish_date": 1560148031000,
+			"category": "vocaloid"
+		},
+		"53": {
+			"title": "Gimme×Gimme",
+			"id": 83,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 18,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1602309600000,
+			"category": "vocaloid"
+		},
+		"54": {
+			"title": "ジャンキーナイトタウンオーケストラ",
+			"id": 84,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1602482400000,
+			"category": "vocaloid"
+		},
+		"55": {
+			"title": "Leia - Remind",
+			"id": 85,
+			"difficulties": {
+				"easy": 9,
+				"normal": 13,
+				"hard": 18,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1603087200000,
+			"category": "vocaloid"
+		},
+		"56": {
+			"title": "on the rocks",
+			"id": 86,
+			"difficulties": {
+				"easy": 7,
+				"normal": 11,
+				"hard": 16,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1602655200000,
+			"category": "vocaloid"
+		},
+		"57": {
+			"title": "恋愛裁判",
+			"id": 87,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 17,
+				"expert": 22,
+				"master": 27
+			},
+			"publish_date": 1609308000000,
+			"category": "idol"
+		},
+		"58": {
+			"title": "チュルリラ・チュルリラ・ダッダッダ！",
+			"id": 88,
+			"difficulties": {
+				"easy": 9,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1609653600000,
+			"category": "theme_park"
+		},
+		"59": {
+			"title": "Color of Drops",
+			"id": 89,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 16,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1611925500000,
+			"category": "idol"
+		},
+		"60": {
+			"title": "限りなく灰色へ",
+			"id": 90,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 18,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1614344700000,
+			"category": "school_refusal"
+		},
+		"61": {
+			"title": "ドラマツルギー",
+			"id": 91,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1609135200000,
+			"category": "light_music_club"
+		},
+		"62": {
+			"title": "乙女解剖",
+			"id": 92,
+			"difficulties": {
+				"easy": 5,
+				"normal": 12,
+				"hard": 16,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1604210400000,
+			"category": "school_refusal"
+		},
+		"63": {
+			"title": "青く駆けろ！",
+			"id": 93,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 17,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1602914400000,
+			"category": "light_music_club"
+		},
+		"64": {
+			"title": "とても痛い痛がりたい",
+			"id": 94,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 18,
+				"expert": 23,
+				"master": 28
+			},
+			"publish_date": 1609826400000,
+			"category": "school_refusal"
+		},
+		"65": {
+			"title": "威風堂々",
+			"id": 95,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1615788000000,
+			"category": "street"
+		},
+		"66": {
+			"title": "from Y to Y",
+			"id": 96,
+			"difficulties": {
+				"easy": 5,
+				"normal": 11,
+				"hard": 16,
+				"expert": 24,
+				"master": 26
+			},
+			"publish_date": 1616392800000,
+			"category": "light_music_club"
+		},
+		"67": {
+			"title": "霽れを待つ",
+			"id": 97,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1610258400000,
+			"category": "light_music_club"
+		},
+		"68": {
+			"title": "ロストワンの号哭",
+			"id": 98,
+			"difficulties": {
+				"easy": 7,
+				"normal": 14,
+				"hard": 19,
+				"expert": 26,
+				"master": 32
+			},
+			"publish_date": 1633154400000,
+			"category": "light_music_club"
+		},
+		"69": {
+			"title": "モア！ジャンプ！モア！",
+			"id": 99,
+			"difficulties": {
+				"easy": 9,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1605765600000,
+			"category": "idol"
+		},
+		"70": {
+			"title": "ECHO",
+			"id": 100,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 16,
+				"expert": 23,
+				"master": 26
+			},
+			"publish_date": 1609567200000,
+			"category": "street"
+		},
+		"71": {
+			"title": "RAD DOGS",
+			"id": 101,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 18,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1612072800000,
+			"category": "street"
+		},
+		"72": {
+			"title": "幽霊東京",
+			"id": 102,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 17,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1620021600000,
+			"category": "street"
+		},
+		"73": {
+			"title": "ニジイロストーリーズ",
+			"id": 103,
+			"difficulties": {
+				"easy": 9,
+				"normal": 13,
+				"hard": 18,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1608444000000,
+			"category": "theme_park"
+		},
+		"74": {
+			"title": "ワンスアポンアドリーム",
+			"id": 105,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 22,
+				"master": 27
+			},
+			"publish_date": 1614492000000,
+			"category": "theme_park"
+		},
+		"75": {
+			"title": "お気に召すまま",
+			"id": 106,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 18,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1617602400000,
+			"category": "theme_park"
+		},
+		"76": {
+			"title": "ミルククラウン・オン・ソーネチカ",
+			"id": 107,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1612591200000,
+			"category": "idol"
+		},
+		"77": {
+			"title": "愛されなくても君がいる",
+			"id": 108,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 16,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1606716000000,
+			"category": "vocaloid"
+		},
+		"78": {
+			"title": "ヒビカセ",
+			"id": 109,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1610949600000,
+			"category": "vocaloid"
+		},
+		"79": {
+			"title": "千本桜",
+			"id": 110,
+			"difficulties": {
+				"easy": 7,
+				"normal": 14,
+				"hard": 20,
+				"expert": 26,
+				"master": 32
+			},
+			"publish_date": 1609480800000,
+			"category": "vocaloid"
+		},
+		"80": {
+			"title": "カトラリー",
+			"id": 111,
+			"difficulties": {
+				"easy": 5,
+				"normal": 12,
+				"hard": 18,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1632204000000,
+			"category": "school_refusal"
+		},
+		"81": {
+			"title": "天使のクローバー",
+			"id": 112,
+			"difficulties": {
+				"easy": 9,
+				"normal": 13,
+				"hard": 17,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1617109500000,
+			"category": "idol"
+		},
+		"82": {
+			"title": "ローリンガール",
+			"id": 113,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 18,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1605333600000,
+			"category": "vocaloid"
+		},
+		"83": {
+			"title": "裏表ラバーズ",
+			"id": 114,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 18,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1605938400000,
+			"category": "vocaloid"
+		},
+		"84": {
+			"title": "アンノウン・マザーグース",
+			"id": 115,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 17,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1606111200000,
+			"category": "vocaloid"
+		},
+		"85": {
+			"title": "アイディスマイル",
+			"id": 116,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1618837500000,
+			"category": "school_refusal"
+		},
+		"86": {
+			"title": "ODDS＆ENDS",
+			"id": 117,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 18,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1608789600000,
+			"category": "vocaloid"
+		},
+		"87": {
+			"title": "＊ハロー、プラネット。",
+			"id": 118,
+			"difficulties": {
+				"easy": 6,
+				"normal": 10,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1609394400000,
+			"category": "vocaloid"
+		},
+		"88": {
+			"title": "ワールズエンド・ダンスホール",
+			"id": 119,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 18,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1610604000000,
+			"category": "vocaloid"
+		},
+		"89": {
+			"title": "いかないで",
+			"id": 120,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1622181600000,
+			"category": "light_music_club"
+		},
+		"90": {
+			"title": "ロミオとシンデレラ",
+			"id": 121,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1623045600000,
+			"category": "idol"
+		},
+		"91": {
+			"title": "ポジティブ☆ダンスタイム",
+			"id": 122,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 18,
+				"expert": 26,
+				"master": 31
+			},
+			"publish_date": 1613714400000,
+			"category": "theme_park"
+		},
+		"92": {
+			"title": "どりーみんチュチュ",
+			"id": 123,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 17,
+				"expert": 23,
+				"master": 27
+			},
+			"publish_date": 1618207200000,
+			"category": "idol"
+		},
+		"93": {
+			"title": "みくみくにしてあげる♪【してやんよ】",
+			"id": 124,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1615269600000,
+			"category": "vocaloid"
+		},
+		"94": {
+			"title": "ボッカデラベリタ",
+			"id": 125,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 18,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1615010400000,
+			"category": "school_refusal"
+		},
+		"95": {
+			"title": "シネマ",
+			"id": 126,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 18,
+				"expert": 24,
+				"master": 29
+			},
+			"publish_date": 1620479100000,
+			"category": "street"
+		},
+		"96": {
+			"title": "トンデモワンダーズ",
+			"id": 127,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 19,
+				"expert": 27,
+				"master": 32
+			},
+			"publish_date": 1624107900000,
+			"category": "theme_park"
+		},
+		"97": {
+			"title": "Brand New Day",
+			"id": 128,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 19,
+				"expert": 28,
+				"master": 32
+			},
+			"publish_date": 1613973600000,
+			"category": "vocaloid"
+		},
+		"98": {
+			"title": "ビターチョコデコレーション",
+			"id": 129,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 19,
+				"expert": 25,
+				"master": 31
+			},
+			"publish_date": 1627452000000,
+			"category": "school_refusal"
+		},
+		"99": {
+			"title": "フロムトーキョー",
+			"id": 130,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 18,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1625663100000,
+			"category": "light_music_club"
+		},
+		"100": {
+			"title": "初音ミクの激唱",
+			"id": 131,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 20,
+				"expert": 29,
+				"master": 33
+			},
+			"publish_date": 1617103800000,
+			"category": "vocaloid"
+		},
+		"101": {
+			"title": "「１」",
+			"id": 132,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 16,
+				"expert": 23,
+				"master": 26
+			},
+			"publish_date": 1618984800000,
+			"category": "light_music_club"
+		},
+		"102": {
+			"title": "悪魔の踊り方",
+			"id": 133,
+			"difficulties": {
+				"easy": 5,
+				"normal": 12,
+				"hard": 19,
+				"expert": 26,
+				"master": 30
+			},
+			"publish_date": 1633672800000,
+			"category": "street"
+		},
+		"103": {
+			"title": "テレキャスタービーボーイ",
+			"id": 134,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1633500000000,
+			"category": "theme_park"
+		},
+		"104": {
+			"title": "六兆年と一夜物語",
+			"id": 135,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 20,
+				"expert": 29,
+				"master": 33
+			},
+			"publish_date": 1626069600000,
+			"category": "light_music_club"
+		},
+		"105": {
+			"title": "チルドレンレコード",
+			"id": 136,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 19,
+				"expert": 27,
+				"master": 31
+			},
+			"publish_date": 1629698400000,
+			"category": "street"
+		},
+		"106": {
+			"title": "花を唄う",
+			"id": 137,
+			"difficulties": {
+				"easy": 6,
+				"normal": 12,
+				"hard": 19,
+				"expert": 25,
+				"master": 30
+			},
+			"publish_date": 1619416800000,
+			"category": "vocaloid"
+		},
+		"107": {
+			"title": "KING",
+			"id": 138,
+			"difficulties": {
+				"easy": 7,
+				"normal": 14,
+				"hard": 19,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1621231200000,
+			"category": "theme_park"
+		},
+		"108": {
+			"title": "夜に駆ける",
+			"id": 139,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1619866800000,
+			"category": "light_music_club"
+		},
+		"109": {
+			"title": "アイスドロップ",
+			"id": 140,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 18,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1629291900000,
+			"category": "idol"
+		},
+		"110": {
+			"title": "群青讃歌",
+			"id": 141,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 17,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1632929400000,
+			"category": "other"
+		},
+		"111": {
+			"title": "再生",
+			"id": 142,
+			"difficulties": {
+				"easy": 5,
+				"normal": 11,
+				"hard": 15,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1632920700000,
+			"category": "school_refusal"
+		},
+		"112": {
+			"title": "トラフィック・ジャム",
+			"id": 143,
+			"difficulties": {
+				"easy": 6,
+				"normal": 13,
+				"hard": 18,
+				"expert": 24,
+				"master": 28
+			},
+			"publish_date": 1625032800000,
+			"category": "street"
+		},
+		"113": {
+			"title": "アイノマテリアル",
+			"id": 144,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 16,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1621576800000,
+			"category": "idol"
+		},
+		"114": {
+			"title": "ベノム",
+			"id": 145,
+			"difficulties": {
+				"easy": 7,
+				"normal": 13,
+				"hard": 18,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1633327200000,
+			"category": "school_refusal"
+		},
+		"115": {
+			"title": "カナデトモスソラ",
+			"id": 149,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 15,
+				"expert": 22,
+				"master": 26
+			},
+			"publish_date": 1624255200000,
+			"category": "school_refusal"
+		},
+		"116": {
+			"title": "トキヲ・ファンカ",
+			"id": 150,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 18,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1633586400000,
+			"category": "vocaloid"
+		},
+		"117": {
+			"title": "泡沫未来",
+			"id": 151,
+			"difficulties": {
+				"easy": 8,
+				"normal": 12,
+				"hard": 17,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1623650400000,
+			"category": "vocaloid"
+		},
+		"118": {
+			"title": "だれかの心臓になれたなら",
+			"id": 152,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1633759200000,
+			"category": "vocaloid"
+		},
+		"119": {
+			"title": "地球最後の告白を",
+			"id": 154,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 18,
+				"expert": 25,
+				"master": 31
+			},
+			"publish_date": 1626674400000,
+			"category": "idol"
+		},
+		"120": {
+			"title": "Beat Eater",
+			"id": 156,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 17,
+				"expert": 25,
+				"master": 28
+			},
+			"publish_date": 1625810400000,
+			"category": "street"
+		},
+		"121": {
+			"title": "マシュマリー",
+			"id": 157,
+			"difficulties": {
+				"easy": 8,
+				"normal": 11,
+				"hard": 18,
+				"expert": 26,
+				"master": 29
+			},
+			"publish_date": 1633845600000,
+			"category": "idol"
+		},
+		"122": {
+			"title": "magic number",
+			"id": 161,
+			"difficulties": {
+				"easy": 6,
+				"normal": 11,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1630476000000,
+			"category": "vocaloid"
+		},
+		"123": {
+			"title": "そうだった！！",
+			"id": 165,
+			"difficulties": {
+				"easy": 8,
+				"normal": 14,
+				"hard": 19,
+				"expert": 27,
+				"master": 31
+			},
+			"publish_date": 1628229600000,
+			"category": "vocaloid"
+		},
+		"124": {
+			"title": "Glory Steady Go!",
+			"id": 166,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 18,
+				"expert": 25,
+				"master": 29
+			},
+			"publish_date": 1629439200000,
+			"category": "theme_park"
+		},
+		"125": {
+			"title": "カゲロウデイズ",
+			"id": 171,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 19,
+				"expert": 27,
+				"master": 31
+			},
+			"publish_date": 1628998200000,
+			"category": "light_music_club"
+		},
+		"126": {
+			"title": "流星のパルス",
+			"id": 173,
+			"difficulties": {
+				"easy": 8,
+				"normal": 13,
+				"hard": 17,
+				"expert": 25,
+				"master": 30
+			},
+			"publish_date": 1631253600000,
+			"category": "light_music_club"
+		},
+		"127": {
+			"title": "拝啓ドッペルゲンガー",
+			"id": 175,
+			"difficulties": {
+				"easy": 9,
+				"normal": 13,
+				"hard": 19,
+				"expert": 28,
+				"master": 32
+			},
+			"publish_date": 1633413600000,
+			"category": "vocaloid"
+		},
+		"128": {
+			"title": "マシンガンポエムドール",
+			"id": 176,
+			"difficulties": {
+				"easy": 9,
+				"normal": 14,
+				"hard": 21,
+				"expert": 30,
+				"master": 33
+			},
+			"publish_date": 1633240800000,
+			"category": "vocaloid"
+		},
+		"129": {
+			"title": "炉心融解",
+			"id": 179,
+			"difficulties": {
+				"easy": 7,
+				"normal": 12,
+				"hard": 17,
+				"expert": 24,
+				"master": 27
+			},
+			"publish_date": 1633068000000,
+			"category": "vocaloid"
+		}
+	}
+}
