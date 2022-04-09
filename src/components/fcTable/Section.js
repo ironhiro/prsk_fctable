@@ -489,6 +489,7 @@ async function getComponent()
 {
     const tested = await Promise.all(category.map(function(element,idx){
     return getValues(element).then(function(data){
+        console.log(data)
         chartStatus['blank'] += Object.keys(data).length;
         const res = Object.keys(data).map((res)=>{
             return data[res]['id'];
@@ -559,7 +560,7 @@ function Section()
     });
     const sectionRef = useRef();
     
-    
+    console.log(error);
     if(isLoading) return <div className="container">로딩중...</div>
     if(error) return <div className="container">Error</div>
     if(components){ 
