@@ -355,7 +355,7 @@ const Sections = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <div id="chart_status" className="mb-5 table-responsive">
+      <div id="chart_status" className="mb-5 table-responsive text-center">
         <table className="table">
           <thead>
             <tr>
