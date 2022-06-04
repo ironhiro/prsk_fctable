@@ -4,6 +4,7 @@ import { useAsync } from "react-async";
 import React, { forwardRef, useRef, useEffect, useState } from "react";
 import { getCurrentDate, sortByDifficulties } from "./Utils";
 import ReactDOM from "react-dom";
+import { exportComponentAsPNG } from "react-component-export-image";
 import ReactTooltip from "react-tooltip";
 import "./Section.css";
 import html2canvas from "html2canvas";
@@ -532,66 +533,6 @@ function getRadioValue() {
     );
   });
 
-  /*
-    const tested = await Promise.all(category.map(function(element,idx){
-        return getValues(element).then(function(data){
-            
-            counts += Object.keys(data).length;
-            const res = Object.keys(data).map((res)=>{
-                return data[res]['id'];
-            });
-            const res2 = Object.keys(data).map((res)=>{
-                return data[res];
-            });
-            const b = res2.map(function(data,index){
-                data.key=res[index];
-                return data;
-            });
-            
-            const c = b.slice(0).sort(function(a,b){
-                return sortByDifficulties(a,b,selectedDiff);
-            });
-            
-            const d = c.map((data)=>components(data));
-        
-            return d;
-        }).then(function(data){
-            const b = `${process.env.PUBLIC_URL}/assets/groupunits/${categoryBg(element)}`;
-            const groups_styles={
-                borderBottom: '10px solid ' + borderColor[element],
-                backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(${process.env.PUBLIC_URL}/assets/backgrounds/${categoryBg(element)})`,
-                
-                backgroundSize: 'cover',
-                backgroundPosition: '20% 20%',
-            }
-            const charts_styles={
-                backgroundColor: 'rgba(211,211,211,0.3)',
-                backgroundSize: 'cover',
-            }
-            const div_col1 = (
-                <div  style={groups_styles}  className="col music-category mx-auto my-auto text-center">
-                        <img className="groups" src={b}></img>
-                </div>
-            );
-            const div_col2 =  (
-                <div style={charts_styles} className="col-9 mx-auto my-auto w-100">
-                        <ul className="groups_border text-center">
-                            {data}
-                        </ul>
-                </div>
-            );
-            const row_styles = {
-                border: '10px solid ' + borderColor[element],
-                
-            }
-         
-            return (
-                    <div style={row_styles}  className="row chart-list h-100 mt-5">
-                        {div_col1}
-                        {div_col2} 
-                    </div>
-            )
-        })}));*/
   chartStatus["blank"] = counts;
   chartStatus["clear"] = 0;
   chartStatus["fc"] = 0;
@@ -623,8 +564,11 @@ function saveImage(sectionRef) {
     document.getElementById("input-file").style.display = "none";
     document.getElementById("button_undo").style.display = "none";
     document.getElementById("description").style.display = "none";
-    //exportComponentAsPNG(sectionRef,{fileName:"풀콤체크표.png", html2CanvasOptions:{}});
-
+    /*
+    exportComponentAsPNG(sectionRef,{fileName:"풀콤체크표.png", html2CanvasOptions:{windowWidth: 1440,
+      scrollY: -window.scrollY,
+      useCORS: true}});
+*/
     const fType = "image/png";
     const fileName = "풀콤체크표.PNG";
     html2canvas(sectionRef.current, {
@@ -640,12 +584,13 @@ function saveImage(sectionRef) {
 
       let link = document.createElement("a");
       link.download = fileName;
-      resizedCanvas.toBlob(function (blob) {
-        link.href = window.URL.createObjectURL(blob);
-        link.click();
-        document.getElementById("btn-download").style.display = "inline";
-      }, fType);
+      link.href = resizedCanvas.toDataURL(fType, 1.0);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);  
+      document.getElementById("btn-download").style.display = "inline";
     });
+    
 
     document.getElementById("input-file").style.display = "inline";
     document.getElementById("button_undo").style.display = "inline";
@@ -815,7 +760,7 @@ function checkStatus(data) {
 
 function getValues(element) {
   // 맞는 데이터 찾는 과정
-  const chartref = firestore.ref("charts");
+  const chartref = firestore.ref("test/charts");
 
   const result = new Promise(function (resolve, reject) {
     setTimeout(function () {
